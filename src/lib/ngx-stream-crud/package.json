@@ -1,0 +1,21 @@
+{
+    "name": "ngx-stream-crud",
+    "version": "0.0.0",
+    "repository": "https://github.com/faxemaxe/ngx-libraries",
+    "author": "Max Höffner",
+    "license": "MIT",
+    "private": false,
+    "$schema": "./../../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "./../../../dist/ngx-stream-crud",
+    "ngPackage": {
+        "lib": {
+            "entryFile": "public_api.ts"
+        }
+    },
+    "peerDependencies": {
+        "@angular/core": "^5.2.0",
+        "@angular/common": "^5.2.0",
+        "@angular/router": "^5.2.0",
+        "rxjs": "^5.5.6"
+    }
+}

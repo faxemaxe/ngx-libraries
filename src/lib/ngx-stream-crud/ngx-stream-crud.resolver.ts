@@ -1,9 +1,11 @@
-import { Observable } from 'rxjs/Observable';
-import { NgxStreamCrudItem } from './ngx-stream-crud-item.interface';
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot} from '@angular/router';
-import { NgxStreamCrudService } from './ngx-stream-crud.service';
+
+import { Observable } from 'rxjs/Observable';
 import { map, skipWhile, first } from 'rxjs/operators'
+
+import { NgxStreamCrudItem } from './ngx-stream-crud-item.interface';
+import { NgxStreamCrudService } from './ngx-stream-crud.service';
 
 @Injectable()
 export abstract class NgxStreamCrudResolver<T extends NgxStreamCrudItem> implements Resolve<T> {
